@@ -6,7 +6,7 @@
 2. Membaca input dari keyboard cin >> A >> B >> C.
 3. Membandingkan Nilai variabel **A** dan **B**.
 4. Kondisi **True**, maka bandingkan nilai variabel **A** dan **C**.
-5. Kondisi **False**, maka bnadingkan nilai variabel **B** dan **C**.
+5. Kondisi **False**, maka bandingkan nilai variabel **B** dan **C**.
 
 **code program**
 
@@ -34,4 +34,49 @@ int main() {
     }
 }
 
-``` # Praktikum21
+``` 
+
+# Soal2.cpp##
+
+**Alur algoritma**
+1. Mendeklarasi variabel int A, B, C, dan D, sebagai variabel input.
+2. Membaca input dari keyboard cin >> A >> B >> C >> D.
+3. Membandingkan Nilai Variabel **A**, **B**, dan **C**.
+4. Kondisi **True**, Maka bandingkan nilai variabel **A** dan **B**.
+5. KOndisi **False**, Maka bandingkan nilai variabel **C** dan **D**.
+
+**Code Program**
+
+```c++
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int A, B, C, D;
+
+        cout << "Masukkan Bilangan 1:";
+        cin >> A;
+        cout << "Masukkan Bilangan 2:";
+        cin >> B;
+        cout << "Masukkan Bilangan 3:";
+        cin >> C;
+        cout << "Masukkan Bilangan 4:";
+        cin >> D;
+
+        if (A>B && A>C && B>D) cout <<
+    "Bilangan Terbesar = " << A << endl;
+        else
+
+        if (B>A && B>C && B>D) cout <<
+    "Bilangan Terbesar = " << B << endl;
+
+        else {
+            if (C>A && C>B && C>D) cout <<
+    "Bilangan Tervesar = " << C << endl;
+            else
+                cout << "Bilangan terbesar = " << D;
+        }
+}
+
+```
